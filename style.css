@@ -14,16 +14,30 @@ body {
 header {
     background: linear-gradient(135deg, #5e6874, #7db8c8);
     color: white;
-    text-align: center;
-    padding: 60px 20px;
+    padding: 40px 10%;          /* Modern horizontal spacing */
+    display: flex;
+    justify-content: space-between; /* Pushes text to left, image to right */
+    align-items: center;        /* Centers them vertically */
 }
-.profile-pic {
-    width: 30px;
-    height: 50px;
+
+.header-text h1 {
+    margin: 0 0 5px 0;          /* Removes default browser margins */
+    font-size: 2.2rem;
+}
+
+.header-text p {
+    margin: 0;
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+.profil-pic {
+    width: 100px;               /* Defines a clean, responsive size */
+    height: 100px;
+    object-fit: cover;          /* Keeps the image square before rounding */
     border-radius: 50%;
     border: 4px solid white;
-    margin-bottom: 15px;
-    
+    display: block;
 }
 header h1 {
     font-size: 3rem;
