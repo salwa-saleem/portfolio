@@ -1,88 +1,372 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Salwa Saleem | Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <div class="header-text">
-        <h1>Salwa Saleem</h1>
-        <p>AI & Data Science Engineering Student</p>
-      </div>
-      <img src="profile.jpg" alt="Salwa" class="profil-pic" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salwa Saleem | AI & Data Science Student Portfolio</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Main Style Sheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ==========================================
+         1. Navigation Bar
+         ========================================== -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">Salwa<span>Saleem</span></a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#" class="active-link">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" id="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ==========================================
+         2. Hero Section (Home)
+         ========================================== -->
+    <header class="hero" id="home">
+        <!-- Interactive Canvas Background -->
+        <canvas id="particles-canvas"></canvas>
+        
+        <div class="container">
+            <div class="hero-content">
+                <span class="hero-welcome"><i class="fa-solid fa-sparkles"></i> Welcome to my space</span>
+                <h1 class="hero-title">Salwa Saleem</h1>
+                <div class="hero-subtitle">
+                    I'm a <span id="typing-text">AI & Data Science Student</span>
+                </div>
+                <p class="hero-desc">
+                    Aspiring Artificial Intelligence and Data Science engineer. 
+                    Passionate about building intelligent software, finding creative solutions to analytical problems, 
+                    and mastering cutting-edge tools.
+                </p>
+                <div class="hero-btns">
+                    <a href="#projects" class="btn btn-primary">Explore My Work <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+            
+            <div class="hero-image-container">
+                <div class="profile-wrapper">
+                    <div class="profile-glow"></div>
+                    <img src="profile.jpg" alt="Salwa Saleem" class="profile-pic">
+                </div>
+            </div>
+        </div>
     </header>
 
-    <section id="about">
-      <h2>About Me</h2>
-      <p>
-        Hello! I'm Salwa Saleem, a B.Tech student in Artificial Intelligence and
-        Data Science at Royal College of Engineering and Technology, Thrissur. I
-        am passionate about technology, problem-solving, innovation, and
-        learning new skills. My goal is to build a successful career in the
-        field of AI and Data Science.
-      </p>
-    </section>
+    <main>
+        <!-- ==========================================
+             3. About Me Section
+             ========================================== -->
+        <section id="about" class="reveal">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Biography</span>
+                    <h2 class="section-title">About Me</h2>
+                </div>
+                
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>
+                            Hello! I'm Salwa Saleem, a B.Tech student in Artificial Intelligence
+                            and Data Science at Royal College of Engineering and Technology,
+                            Thrissur. I am passionate about technology, problem-solving,
+                            innovation, and learning new skills.
+                        </p>
+                        <p>
+                            My long-term goal is to build a successful career in the fields of AI 
+                            and Data Engineering. I strive to design applications that use analytical 
+                            patterns to automate workflow, make decisions, and drive business insights.
+                        </p>
+                    </div>
+                    
+                    <div class="facts-grid">
+                        <div class="fact-card">
+                            <i class="fa-solid fa-graduation-cap fact-icon"></i>
+                            <h4>Education Level</h4>
+                            <p>B.Tech Candidate</p>
+                        </div>
+                        <div class="fact-card">
+                            <i class="fa-solid fa-atom fact-icon"></i>
+                            <h4>Specialization</h4>
+                            <p>AI & Data Science</p>
+                        </div>
+                        <div class="fact-card">
+                            <i class="fa-solid fa-location-dot fact-icon"></i>
+                            <h4>Location</h4>
+                            <p>Thrissur, India</p>
+                        </div>
+                        <div class="fact-card">
+                            <i class="fa-solid fa-calendar-days fact-icon"></i>
+                            <h4>Duration</h4>
+                            <p>2025 - 2029</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <section id="skills">
-      <h2>Skills</h2>
-      <ul>
-        <li>Python Programming</li>
-        <li>Problem Solving</li>
-        <li>Communication Skills</li>
-        <li>Teamwork</li>
-        <li>HTML & CSS</li>
-      </ul>
-    </section>
+        <!-- ==========================================
+             4. Skills Section
+             ========================================== -->
+        <section id="skills" class="reveal">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Competencies</span>
+                    <h2 class="section-title">My Skills</h2>
+                </div>
+                
+                <p class="skills-intro">
+                    Equipped with fundamental engineering principles and a growing stack of languages, libraries, and soft skills needed for collaborative teamwork.
+                </p>
 
-    <section id="education">
-      <h2>Education</h2>
-      <p>
-        B.Tech in Artificial Intelligence & Data Science Engineering
-        <br />
-        Royal College of Engineering and Technology, Thrissur
-        <br />
-        2025 - 2029
-      </p>
-    </section>
+                <div class="skills-grid">
+                    <!-- Python -->
+                    <div class="glass-card skill-card">
+                        <div class="skill-card-header">
+                            <div class="skill-icon-box">
+                                <i class="fa-brands fa-python"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h3>Python Programming</h3>
+                                <p>Core & script building</p>
+                            </div>
+                        </div>
+                        <div class="skill-bar-bg">
+                            <div class="skill-bar-fill python"></div>
+                        </div>
+                    </div>
+                    
+                    <!-- Problem Solving -->
+                    <div class="glass-card skill-card">
+                        <div class="skill-card-header">
+                            <div class="skill-icon-box">
+                                <i class="fa-solid fa-brain"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h3>Problem Solving</h3>
+                                <p>Algorithms & logic puzzles</p>
+                            </div>
+                        </div>
+                        <div class="skill-bar-bg">
+                            <div class="skill-bar-fill problem"></div>
+                        </div>
+                    </div>
 
-    <section id="projects">
-      <h2>Projects</h2>
-      <h3>Complaint Manegment</h3>
+                    <!-- Web Tech -->
+                    <div class="glass-card skill-card">
+                        <div class="skill-card-header">
+                            <div class="skill-icon-box">
+                                <i class="fa-solid fa-code"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h3>HTML & CSS</h3>
+                                <p>Modern responsive layouts</p>
+                            </div>
+                        </div>
+                        <div class="skill-bar-bg">
+                            <div class="skill-bar-fill web"></div>
+                        </div>
+                    </div>
 
-      <h3>AI Hunt Participation</h3>
-      <p>
-        Participated in an AI-focused event that enhanced my understanding of
-        Artificial Intelligence concepts and problem-solving techniques.
-      </p>
-    </section>
+                    <!-- Teamwork -->
+                    <div class="glass-card skill-card">
+                        <div class="skill-card-header">
+                            <div class="skill-icon-box">
+                                <i class="fa-solid fa-users"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h3>Teamwork & Collab</h3>
+                                <p>Agile coordination & communication</p>
+                            </div>
+                        </div>
+                        <div class="skill-bar-bg">
+                            <div class="skill-bar-fill team"></div>
+                        </div>
+                    </div>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>
-        Email:
-        <a href="mailto:salwasaleem7777@gmail.com">salwasaleem7777@gmail.com</a>
-      </p>
-      <p>
-        LinkedIn:
-        <a
-          href="https://www.linkedin.com/in/salwa-saleem-1bbb2738b?utm_source=share_via&utm_content=profile&utm_medium=member_android"
-        >
-          Click Here</a
-        >
-      </p>
-      <p>
-        Github:
-        <a href="https://github.com/salwa-saleem" target="_blank">
-          Click Here</a
-        >
-      </p>
-    </section>
+                    <!-- Communication -->
+                    <div class="glass-card skill-card">
+                        <div class="skill-card-header">
+                            <div class="skill-icon-box">
+                                <i class="fa-solid fa-comments"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h3>Communication Skills</h3>
+                                <p>Presentations & technical writing</p>
+                            </div>
+                        </div>
+                        <div class="skill-bar-bg">
+                            <div class="skill-bar-fill comm"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <!-- ==========================================
+             5. Education Section
+             ========================================== -->
+        <section id="education" class="reveal">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Learning path</span>
+                    <h2 class="section-title">Education</h2>
+                </div>
+                
+                <div class="education-container">
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-header">
+                                    <h3>B.Tech in Artificial Intelligence & Data Science Engineering</h3>
+                                    <span class="timeline-date">2025 - 2029</span>
+                                </div>
+                                <div class="timeline-college">
+                                    <i class="fa-solid fa-school-flag"></i>
+                                    Royal College of Engineering and Technology, Thrissur
+                                </div>
+                                <p class="timeline-desc">
+                                    Deepening my understanding of computer systems, statistics, deep learning models,
+                                    neural networking systems, database queries, and data processing algorithms.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             6. Projects Section
+             ========================================== -->
+        <section id="projects" class="reveal">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Portfolio</span>
+                    <h2 class="section-title">Featured Projects</h2>
+                </div>
+                
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="glass-card project-card">
+                        <div class="project-icon">
+                            <i class="fa-solid fa-screwdriver-wrench"></i>
+                        </div>
+                        <h3 class="project-title">Complaint Management</h3>
+                        <p class="project-desc">
+                            A smart management application designed to organize, catalog, and resolve student complaints and issues.
+                            Provides a clean interface for users to submit items and track resolution progress.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">HTML & CSS</span>
+                            <span class="project-tag">Responsive Design</span>
+                            <span class="project-tag">Python Scripting</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fa-brands fa-github"></i> Code <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <a href="#" class="project-link"><i class="fa-solid fa-link"></i> Live Demo</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 2 -->
+                    <div class="glass-card project-card">
+                        <div class="project-icon">
+                            <i class="fa-solid fa-circle-nodes"></i>
+                        </div>
+                        <h3 class="project-title">AI Hunt Participation</h3>
+                        <p class="project-desc">
+                            Participated in an AI-focused event, building and testing computational models, improving team coordination,
+                            and enhancing understanding of Artificial Intelligence concepts and algorithmic problem-solving techniques.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">AI Concepts</span>
+                            <span class="project-tag">Problem Solving</span>
+                            <span class="project-tag">Hackathon</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fa-brands fa-github"></i> Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             7. Contact Section
+             ========================================== -->
+        <section id="contact" class="reveal">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Reach out</span>
+                    <h2 class="section-title">Get In Touch</h2>
+                </div>
+                
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h3>Let's talk about tech!</h3>
+                        <p>
+                            If you'd like to collaborate on a data science project, have queries about B.Tech programs, or just want to connect, feel free to use the links or click to copy my email address.
+                        </p>
+                        
+                        <div class="contact-methods">
+                            <!-- Copy email button -->
+                            <button class="contact-card-btn" id="copy-email-btn">
+                                <span class="contact-card-icon"><i class="fa-regular fa-envelope"></i></span>
+                                <div class="contact-card-details">
+                                    <h4>Email Address</h4>
+                                    <p>salwasaleem7777@gmail.com</p>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="social-connect-box">
+                        <h3>Or connect on social networks</h3>
+                        <div class="social-circle-links">
+                            <a href="https://github.com/salwasaleem7777-star" target="_blank" class="social-circle-link github" title="GitHub Profile">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/salwa-saleem-1bbb2738b?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="social-circle-link linkedin" title="LinkedIn Profile">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ==========================================
+         8. Footer
+         ========================================== -->
     <footer>
-      <p>&copy; 2026 Salwa Saleem. All Rights Reserved.</p>
+        <div class="container">
+            <h4 class="footer-logo">Salwa<span>Saleem</span></h4>
+            <p>&copy; 2026 Salwa Saleem. All Rights Reserved.</p>
+            <p style="font-size: 0.8rem; opacity: 0.5; margin-top: 5px;">Designed with premium glassmorphism & interactive canvas animations</p>
+        </div>
     </footer>
-  </body>
+
+    <!-- Main JavaScript -->
+    <script src="script.js"></script>
+</body>
 </html>
